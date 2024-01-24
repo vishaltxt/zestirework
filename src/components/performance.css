@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.head h1{
+    margin: 40px 0px 0px 50px;
+}
+#mains{
+    display: flex;
+    gap: 50px;
+}
+.mains-input{
+    padding: 14px;
+    width: 515px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    box-shadow: 1px 2px 1px 1px whitesmoke;
+    /* margin-top: 30px; */
+}
+.date-area{
+    display: flex;
+    margin: 30px 0px 0px 50px;
+    /* margin-top: 20px; */
+}
+.arrow{
+    width: 23px;
+    height: 23px;
+    margin-top: 7px;
+}
+.date-area p{
+    /* margin:50px 0px 40px 0px ; */
+    margin-top: 10px;
+}
+.date-area-input{
+    padding: 10px;
+    width: 400px;
+    border: 1px solid rgba(166, 169, 172, 0.7);
+    border-radius: 12px;
+    /* margin-bottom: 100px; */
+}
+.image-area{
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+}
+.image-area p{
+    text-align: center;
+    margin-bottom: 200px;
+}
