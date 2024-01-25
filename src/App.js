@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // import View from './components/view';
 import ResourceModal from './components/resourcemodal';
 import Performance from './components/performance';
+import Employee from './components/employee';
+import Performmore from './components/performmore';
 
 function App() {
   return (
@@ -14,9 +16,10 @@ function App() {
         {/* <Route path="/view" element={<View />} /> */}
         <Route path="/resourcemodel" element={<ResourceModal />} />
         <Route path="/performance" element={<Performance />} />
+        <Route path="employee" element={<Employee />} />
+        <Route path="performmore" element={<Performmore />} />
       </Routes>
     </Router >
   );
 }
-
 export default App;

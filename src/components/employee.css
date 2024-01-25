@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    margin: 30px 0px 0px 50px;
+}
+.container li{
+    padding: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.first-li{
+    background-color: rgba(39, 179, 87, 0.16);
+}
+.tickIcon{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 5.5%;
+    background-color:  rgba(39, 179, 87, 0.16);
+    transform: translate(10%);
+    right: 135px;
+}
