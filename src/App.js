@@ -6,6 +6,8 @@ import ResourceModal from './components/resourcemodal';
 import Performance from './components/performance';
 import Employee from './components/employee';
 import Performmore from './components/performmore';
+import Invoice from './components/invoice';
+import Saleinvoice from './components/saleinvoice';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/performance" element={<Performance />} />
         <Route path="employee" element={<Employee />} />
         <Route path="performmore" element={<Performmore />} />
+        <Route path="invoice" element={<Invoice />} />
+        <Route path="saleinvoice" element={<Saleinvoice />} />
       </Routes>
     </Router >
   );
