@@ -2,20 +2,27 @@
     margin: 0px;
     padding: 0px;
 }
+#saleinvoice-bg{
+    background-color:rgba(39, 179, 87, 0.16) ;
+}
 :root{
     font-family: Arial, Helvetica, sans-serif;
+    /* background-color: (39, 179, 87, 0.16); */
+}
+.top-heading{
+    margin: 20px 0px 8px 260px;
 }
 .horizontal-line{
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-left: 245px;
 }
 #saleinvoice{
     display: flex;
     flex-direction:row-reverse;
-    background-color:rgba(39, 179, 87, 0.16);
+    /* background-color:rgba(39, 179, 87, 0.16); */
 }
 .saleinvoice-container{
-    margin-top: 20px;
+    margin-top: 10px;
     display: grid;
     width: 1200px;
     grid-template-areas: 
@@ -46,11 +53,9 @@
     grid-area: six;
 }
 .saleinvoice-grid{
-    /* border: 2px solid black; */
     background-color:white;
     border-radius: 6px;
-    padding: 14px;
-    /* position:relative; */
+    padding: 11px;
     margin-right: 10px;
 }
 #one{
@@ -61,11 +66,15 @@
     padding: 9px;
     font-family: Arial, Helvetica, sans-serif;
 }
-#two p{
-    padding: 18px;
+.one-text{
+    text-align: center;
 }
-#two p{
-    /* margin:0px 30px 0px 0px ; */
+.one-last{
+    text-align: right;
+    color: gray;
+}
+.two-para{
+    margin: 20px 0px 11px 0px;
 }
 #two input{
     width: 100%;
@@ -82,10 +91,10 @@
 }
 #three{
     display: flex;
+    padding: 15px;
 }
 #three p{
     font-family: Arial, Helvetica, sans-serif;
-    /* display: flex; */
 }
 #three select{
     margin-left: 15px;
@@ -93,22 +102,20 @@
     height: 36px;
     border: 2px solid  rgba(128, 128, 128, 0.081);
     border-radius: 6px;
-    /* color: rgba(128, 128, 128, 0.689); */
 }
 .saleinvoice-button{
     border: 1px solid skyblue;
     border-radius: 12px;
-    color: skyblue;
+    /* color: skyblue; */
     background-color: rgba(135, 207, 235, 0.508);
-}
-#three  option button{
-
 }
 .fouth-container{
     display: flex;
     gap: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    /* padding: 19px; */
+}
+.four-heading{
+    margin-left: 12px;
 }
 .fourth{
     padding: 12px;
@@ -119,7 +126,6 @@
     height: 33px;
     border: 2px solid  rgba(128, 128, 128, 0.081);
     border-radius: 6px;
-    color: rgba(128, 128, 128, 0.689);
 }
 .fourth input{
     margin-top: 5px;
@@ -127,26 +133,31 @@
     height: 33px;
     border: 2px solid  rgba(128, 128, 128, 0.081);
     border-radius: 6px;
-    color: rgba(128, 128, 128, 0.689);
 }
-.last-button{
-    width: 160px;
-    margin: 5px 20px 0px 0px;
-    float: right;
-    color: white;
-    padding: 6px;
-    border-radius: 6px;
-    background-color: rgb(19, 19, 72);
+.four-para{
+    margin-left: 13px;
+    font-weight:400;
+    color: rgba(0, 144, 189, 1) ;
 }
+
 .fifth-container{
     display: flex;
     padding: 9px;
-    gap: 30px;
-    /* display: grid; */
-    /* grid-template-columns: repeat(4,1fr); */
+    
 }
 .fifth{
-    /* padding: 9px; */
+    padding: 9px;
+    gap: 60px;
+}
+.fifth-second{
+    display: flex;
+    position: absolute;
+    margin: 10px 0px 0px 390px;
+    gap: 14px;
+}
+.five-plus{
+    float: right;
+    color: gray;
 }
 .fivepara{
     padding: 8px;
@@ -160,26 +171,57 @@
     padding: 5px;
 }
 .h5{
-    padding: 13px;
+    margin: 10px 0px 10px 1px;
     font-family: Arial, Helvetica, sans-serif;
 }
 .img{
     width: 23px;
     height: 23px;
     margin-top: 10px;
+    position: absolute;
+    left: 830px;
 }
-.termsandconditions{
-    margin-left: 20px;
+.termsandconditions li{
+    margin-left: 27px;
 }
 .sixth{
     display: flex;
     gap: 150px;
 }
 #six p{
-    padding:8px ;
+    padding:14px ;
 }
 .checkbox-input{
-    /* margin-top: 18px; */
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 50px;
     width: 18px;
     height:18px;
+}
+.checkbox-text{
+    position: absolute;
+    color: rgba(0, 0, 255, 0.83);
+    margin-top: 10px;
+    margin-left: 70px;
+    float: right;
+}
+.six-para{
+    position: absolute;
+    align-items: center;
+    margin-left: 170px;
+}
+.six-rate{
+    margin-left: 217px;
+}
+.six-last-para{
+    background-color: rgba(237, 156, 170, 0.664);
+}
+.last-button{
+    width: 160px;
+    margin: 0px 25px 0px 0px;
+    float: right;
+    color: white;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: rgb(19, 19, 72);
 }

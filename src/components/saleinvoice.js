@@ -3,7 +3,8 @@ import './saleinvoice.css'
 import img from '../images/Create.png'
 const Saleinvoice = () => {
     return (
-        <div>
+        <div id='saleinvoice-bg'>
+            <p className='top-heading'>Sale Invoice</p>
             <hr className='horizontal-line'></hr>
             <section id='saleinvoice'>
                 <div className='saleinvoice-first'>
@@ -11,20 +12,20 @@ const Saleinvoice = () => {
                 </div>
                 <div className='saleinvoice-container'>
                     <div id='one' className='saleinvoice-grid'>
-                        <p className='grid-one'>Invoice no</p>
-                        <p>1</p>
-                        <p></p>
+                        <p>Invoice no</p>
+                        <p className='one-text'>1</p>
+                        <p className='one-last'></p>
                         <p>Invoice Date</p>
-                        <p>4 th MAY, 2023</p>
-                        <p>Add</p>
+                        <p className='one-text'>4 th MAY, 2023</p>
+                        <p className='one-last'>Add</p>
                         <p>Due Date</p>
-                        <p>4 th May, 2023</p>
-                        <p>Edit</p>
+                        <p className='one-text'>4 th May, 2023</p>
+                        <p className='one-last'>Edit</p>
                     </div>
                     <div id='two' className='saleinvoice-grid'>
-                        <p className=''>Your GSTIN</p>
+                        <p className='two-para'>Your GSTIN</p>
                         <input></input>
-                        <p>State of Supply</p>
+                        <p className='two-para'>State of Supply</p>
                         <select>
                             <option></option>
                         </select>
@@ -41,7 +42,7 @@ const Saleinvoice = () => {
                         </select>
                     </div>
                     <div id='four' className='saleinvoice-grid'>
-                        <h4>Items</h4>
+                        <h3 className='four-heading'>Items</h3>
                         <div className='fouth-container'>
                             <div className='fourth'>
                                 <p>Item code/Name</p>
@@ -66,12 +67,13 @@ const Saleinvoice = () => {
                                 <input></input>
                             </div>
                         </div>
-                        <p>ADD MORE ITEMS+</p>
+                        <p className='four-para'>ADD MORE</p>
+                        <p className='four-para'>ITEMS+</p>
                     </div>
                     <div id='five' className='saleinvoice-grid'>
-                        <p className='fivepara'>Add Discount</p>
+                        <p className='fivepara'>Add Discount <span className='five-plus'>+</span></p>
                         <hr className='division'></hr>
-                        <p className='fivepara'>Add Extra Charge</p>
+                        <p className='fivepara'>Add Extra Charge <span className='five-plus'>+</span></p>
                         <hr className='division'></hr>
                         <div className='fifth-container'>
                             <div className='fifth'>
@@ -84,16 +86,18 @@ const Saleinvoice = () => {
                                     <span className="radio-text">UNPAID</span>
                                 </label>
                             </div>
-                            <div className='fifth'>
-                                <p>Payment type</p>
-                            </div>
-                            <div className='fifth'>
-                                <p>Cash</p>
-                            </div>
-                            <div className='fifth'>
-                                <select>
-                                    <option></option>
-                                </select>
+                            <div className='fifth-second'>
+                                <div className=''>
+                                    <p>Payment type</p>
+                                </div>
+                                <div className=''>
+                                    <p>Cash</p>
+                                </div>
+                                <div className=''>
+                                    <select>
+                                        <option></option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <hr className='division'></hr>
@@ -103,7 +107,7 @@ const Saleinvoice = () => {
                         </div>
                         <div className='termsandconditions'>
                             <ol type='1'>
-                                <li>ITEMS once sold will not be taken back or Exchanged</li>
+                                <li>ITEMS once sold will not be taken back or Exchanged.</li>
                                 <li>A late fee of 10% of due amount will be added for delayed payments.</li>
                             </ol>
                         </div>
@@ -111,45 +115,45 @@ const Saleinvoice = () => {
                     <div id='six' className='saleinvoice-grid'>
                         <div className='sixth'>
                             <p>Price Break up</p>
-                            <label class="checkbox-label">
+                            <label className="checkbox-label">
                                 <input type="checkbox" class="checkbox-input" checked />
-                                <span class="checkbox-text">Send SMS To Party</span>
+                                <span className="checkbox-text">Send SMS To Party</span>
                             </label>
                         </div>
                         <hr></hr>
                         <div className='sixth'>
                             <div>
-                                <p>Sale Price</p>
+                                <p className='six-para'>Sale Price</p>
                             </div>
                             <div>
-                                <p>₹ 499</p>
-                            </div>
-                        </div>
-                        <hr></hr>
-                        <div className='sixth'>
-                            <div>
-                                <p>Discount(20%)</p>
-                            </div>
-                            <div>
-                                <p>₹ 99.00</p>
+                                <p className='six-rate'>₹ 499</p>
                             </div>
                         </div>
                         <hr></hr>
                         <div className='sixth'>
                             <div>
-                                <p>IGST @ 5%</p>
+                                <p className='six-para'>Discount(20%)</p>
                             </div>
                             <div>
-                                <p>₹19.96</p>
+                                <p className='six-rate'>₹ 99.00</p>
                             </div>
                         </div>
                         <hr></hr>
                         <div className='sixth'>
                             <div>
-                                <p>Total Selling Price</p>
+                                <p className='six-para'>IGST @ 5%</p>
                             </div>
                             <div>
-                                <p>₹ 419.16</p>
+                                <p className='six-rate'>₹19.96</p>
+                            </div>
+                        </div>
+                        <hr></hr>
+                        <div className='sixth six-last-para'>
+                            <div>
+                                <p className='six-para'>Total Selling Price</p>
+                            </div>
+                            <div>
+                                <p className='six-rate'>₹ 419.16</p>
                             </div>
                         </div>
                     </div>
