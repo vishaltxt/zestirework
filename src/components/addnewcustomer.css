@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main-addnewcustomer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 1;
+    background-color:rgba(128, 128, 128, 0.665);
+}
+.addnewcustomer-container{
+    position: fixed;
+    width: 370px;
+    margin: 10px 0px 0px 90px;
+    /* padding: 20px; */
+    background-color: white;
+    padding: 0px;
+}
+.addnewcustomer-para{
+    color: rgba(137, 137, 137, 1);
+    padding: 12px;
+}
+.addnewcustomer-input{
+    padding: 9px;
+    /* margin-left: 20px; */
+    color: black;
+    border: 1px solid rgba(241, 241, 241, 1);
+    border-radius: 6px;
+    width: 90%;
+}
+.addnewcustomer-hr{
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 90%;
+}
+.addnewcustomer-middle{
+    display: flex;
+}
+.addnewcustomer-box{
+    width: 92%;
+    margin: 10px 0px 10px 10px;
+    border-radius: 7px;
+    padding: 1px;
+    background-color: rgba(236, 245, 255, 1);
+}
+.rradio-input{
+    position: absolute;
+    right: 45%;
+    /* top: 70%; */
+}
+.rradio-text{
+    font-size: 14px;
+    margin-left: 40px;
+}
+.rradio-btns{
+    /* display: flex; */
+    /* margin-right: 90px; */
+}
+.addnewcustomer-hr2{
+    margin-bottom: 25px;
+    margin-left: 15px;
+    width: 90%;
+}
+.addnewcustomer-buttons{
+    padding: 5px;
+    gap: 19px;
+    margin-bottom: 10px;
+}
+.addnewcustomer-delete{
+    padding: 11px;
+    width: 156px;
+    color: grey;
+    border: 2px solid grey;
+    background-color:rgba(255, 255, 255, 1);
+    border-radius: 7px;
+    margin-left: 20px;
+}
+.addnewcustomer-save{
+    padding: 11px;
+    width: 156px;
+    border-radius: 7px;
+    background-color:rgba(1, 17, 53, 1);
+    color: white;
+    margin-left: 10px;
+}

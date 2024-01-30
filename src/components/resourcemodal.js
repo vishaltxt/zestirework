@@ -4,8 +4,8 @@ import './resourcemodal.css';
 const ResourceModal = ({ closeModal }) => {
     return (
         <>
-            <div className='modal-wrapper' onClick={closeModal}></div>
-            <div className='modal-container'>
+            <div className='modal-wrapperr' onClick={closeModal}></div>
+            <div className='modal-containerr'>
                 <div className='view-header'>
                     <h1>Resource Management</h1>
                     <button>Create +</button>

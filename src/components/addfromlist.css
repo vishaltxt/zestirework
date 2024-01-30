@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main-addfromlist{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 1;
+    background-color:rgba(128, 128, 128, 0.665);
+}
+.addfromlist-container{
+    position: fixed;
+    width: 350px;
+    height: 450px;
+    margin: 150px 0px 0px 250px;
+    padding: 10px;
+    background-color: white;
+}
+.addfromlist-inside{
+    padding: 9px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+.addfromlist-inside::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 33px; 
+    height: 33px;
+    border: 2px solid rgba(241, 241, 241, 1); 
+    border-radius: 50%;
+    box-sizing: border-box;
+}

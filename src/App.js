@@ -8,6 +8,9 @@ import Employee from './components/employee';
 import Performmore from './components/performmore';
 import Invoice from './components/invoice';
 import Saleinvoice from './components/saleinvoice';
+// import Saleinvoicemodal from './components/saleinvoicemodal';
+// import MyModal from './components/saleinvoicemodal';
+// import MySecondModal from './components/addextracharge';
 
 function App() {
   return (
@@ -22,6 +25,8 @@ function App() {
         <Route path="performmore" element={<Performmore />} />
         <Route path="invoice" element={<Invoice />} />
         <Route path="saleinvoice" element={<Saleinvoice />} />
+        {/* <Route path="saleinvoicemodal" element={<MyModal />} /> */}
+        {/* <Route path="addextracharges" element={<MySecondModal />} /> */}
       </Routes>
     </Router >
   );

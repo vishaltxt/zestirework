@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.productlistitem-main{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 1;
+    background-color:rgba(128, 128, 128, 0.665);
+}
+.productlistitem-container{
+    position: fixed;
+    width: 350px;
+    height: 500px;
+    margin: 150px 0px 0px 250px;
+    padding: 19px;
+    border-radius: 7px;
+    background-color: white;
+}
+.addfromproduct-input{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.searchbar-icon{
+    position: fixed;
+    top: 24.5%;
+    transform: translateY(-10%);
+    left: 281px;
+    /* right: 510px; */
+}
+.addfromproduct-flex{
+    display: flex;
+    gap: 150px;
+    border: 2px solid rgba(128, 128, 128, 0.263);
+    padding: 12px;
+}

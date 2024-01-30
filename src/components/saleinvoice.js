@@ -1,7 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
+// import Modal from 'react-modal'
 import './saleinvoice.css'
 import img from '../images/Create.png'
+import MyModal from './saleinvoicemodal';
+import MySecondModal from './addextracharge';
+import PaymentType from './paymenttype';
+import Sendsms from './sendsms';
+import Customer from './customer';
+import Product from './product';
+
 const Saleinvoice = () => {
+    const [showModal, setShowModal] = useState(false);
+    const closeModal = () => setShowModal(false);
+
+    const [extra, setExtra] = useState(false);
+    const close = () => setExtra(false);
+
+    const [payment, setPayment] = useState(false);
+    const closepayment = () => setPayment(false);
+
+    const [sms, setSMS] = useState(false);
+    const closesms = () => setSMS(false);
+
+    const [customer, setCustomer] = useState(false);
+    const closecustomer = () => setCustomer(false);
+
+    const [product, setProduct] = useState(false);
+    const closeProduct = () => setProduct(false);
     return (
         <div id='saleinvoice-bg'>
             <p className='top-heading'>Sale Invoice</p>
@@ -32,8 +57,9 @@ const Saleinvoice = () => {
                     </div>
                     <div id='three' className='saleinvoice-grid'>
                         <div>
-                            <p>Customer/</p>
+                            <p onClick={() => setCustomer(true)}>Customer/</p>
                             <p>Business name</p>
+                            {customer && <Customer closecustomer={closecustomer} />}
                         </div>
                         <div>
                         </div>
@@ -42,7 +68,7 @@ const Saleinvoice = () => {
                         </select>
                     </div>
                     <div id='four' className='saleinvoice-grid'>
-                        <h3 className='four-heading'>Items</h3>
+                        <h3 className='four-heading'>Products</h3>
                         <div className='fouth-container'>
                             <div className='fourth'>
                                 <p>Item code/Name</p>
@@ -67,13 +93,15 @@ const Saleinvoice = () => {
                                 <input></input>
                             </div>
                         </div>
-                        <p className='four-para'>ADD MORE</p>
-                        <p className='four-para'>ITEMS+</p>
+                        <p className='four-para' onClick={() => setProduct(true)}>ADD MORE PRODUCTS+</p>
+                        {product && <Product closeProduct={closeProduct} />}
                     </div>
                     <div id='five' className='saleinvoice-grid'>
-                        <p className='fivepara'>Add Discount <span className='five-plus'>+</span></p>
+                        <p className='fivepara'>Add Discount <span className='five-plus' onClick={() => setShowModal(true)}>+</span></p>
+                        {showModal && <MyModal closeModal={closeModal} />}
                         <hr className='division'></hr>
-                        <p className='fivepara'>Add Extra Charge <span className='five-plus'>+</span></p>
+                        <p className='fivepara'>Add Extra Charge <span className='five-plus' onClick={() => setExtra(true)}>+</span></p>
+                        {extra && <MySecondModal close={close} />}
                         <hr className='division'></hr>
                         <div className='fifth-container'>
                             <div className='fifth'>
@@ -88,12 +116,13 @@ const Saleinvoice = () => {
                             </div>
                             <div className='fifth-second'>
                                 <div className=''>
-                                    <p>Payment type</p>
+                                    <p onClick={() => setPayment(true)}>Payment type</p>
+                                    {payment && <PaymentType closepayment={closepayment} />}
                                 </div>
-                                <div className=''>
+                                <div className='cash'>
                                     <p>Cash</p>
                                 </div>
-                                <div className=''>
+                                <div className='fifth-select'>
                                     <select>
                                         <option></option>
                                     </select>
@@ -117,7 +146,8 @@ const Saleinvoice = () => {
                             <p>Price Break up</p>
                             <label className="checkbox-label">
                                 <input type="checkbox" class="checkbox-input" checked />
-                                <span className="checkbox-text">Send SMS To Party</span>
+                                <span className="checkbox-text" onClick={setSMS}>Send SMS To Party</span>
+                                {sms && <Sendsms closesms={closesms} />}
                             </label>
                         </div>
                         <hr></hr>

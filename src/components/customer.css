@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.customer-main{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 1;
+    background-color:rgba(128, 128, 128, 0.665);
+}
+.customer-container{
+    position: fixed;
+    width: 300px;
+    margin: 150px 0px 0px 250px;
+    padding: 0px;
+    border-radius: 7px;
+    background-color: white;
+}
+.right-side-fix{
+    margin: 0px 0px 0px 140px;
+    padding: 9px;
+}
+.customer-container input{
+    padding: 9px;
+    margin-left: 10px;
+    border: 1px solid rgba(241, 241, 241, 1);
+    border-radius: 6px;
+    width: 90%;
+}
+.left-side-fix{
+    padding: 9px;
+}

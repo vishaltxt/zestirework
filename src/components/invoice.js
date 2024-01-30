@@ -1,5 +1,6 @@
 import React from 'react'
 import './invoice.css'
+import { Link } from 'react-router-dom'
 import ellipse from '../images/Ellipse 5.png'
 import invoice from '../images/invoice.png'
 const Invoice = () => {
@@ -15,7 +16,7 @@ const Invoice = () => {
                     <img className='invoice' src={invoice} alt="/"></img>
                     <p className='invoice-first-para'>Hello! Create your first invoice</p>
                     <p className='invoice-second-para'>Click on the create invoice button below</p>
-                    <button className='invoice-button'>Create Invoice+</button>
+                    <button className='invoice-button'><Link to="/saleinvoice">Create Invoice+</Link></button>
                 </div>
             </section>
         </div>

@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main-payment{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 1;
+    background-color:rgba(128, 128, 128, 0.665);
+}
+.upper-color{
+    background-color:rgba(236, 245, 255, 1);
+}
+.upper-color h4{
+    margin-top: 0px;
+}
+.payment-container{
+    position: fixed;
+    width: 450px;
+    margin: 270px 0px 0px 500px;
+    padding: 0px;
+    background-color: white;
+}
+.sms-para{
+    line-height: 0;
+}

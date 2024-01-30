@@ -3,7 +3,7 @@
     padding: 0px;
 }
 #saleinvoice-bg{
-    background-color:rgba(39, 179, 87, 0.16) ;
+    background-color:rgba(247, 249, 255, 1);
 }
 :root{
     font-family: Arial, Helvetica, sans-serif;
@@ -143,7 +143,6 @@
 .fifth-container{
     display: flex;
     padding: 9px;
-    
 }
 .fifth{
     padding: 9px;
@@ -151,9 +150,12 @@
 }
 .fifth-second{
     display: flex;
-    position: absolute;
-    margin: 10px 0px 0px 390px;
+    position: fixed;
+    margin: 10px 0px 0px 395px;
     gap: 14px;
+}
+.cash{
+    color: grey;
 }
 .five-plus{
     float: right;
@@ -174,12 +176,15 @@
     margin: 10px 0px 10px 1px;
     font-family: Arial, Helvetica, sans-serif;
 }
+.fifth-select select{
+    border: 2px solid white;
+}
 .img{
     width: 23px;
     height: 23px;
     margin-top: 10px;
     position: absolute;
-    left: 830px;
+    left: 845px;
 }
 .termsandconditions li{
     margin-left: 27px;
@@ -197,6 +202,7 @@
     margin-left: 50px;
     width: 18px;
     height:18px;
+    background-color: rgb(19, 19, 72);
 }
 .checkbox-text{
     position: absolute;
@@ -214,7 +220,7 @@
     margin-left: 217px;
 }
 .six-last-para{
-    background-color: rgba(237, 156, 170, 0.664);
+    background-color:rgba(255, 210, 143, 1);
 }
 .last-button{
     width: 160px;
