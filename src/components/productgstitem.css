@@ -21,36 +21,140 @@
     border-radius: 7px;
     background-color: white;
 }
+input::placeholder {
+    color: rgba(33, 36, 41, 1); 
+}
 .productgstitem-head{
     display: flex;
     padding: 8px;
     gap: 20px;
+    color: rgba(33, 36, 41, 1);
+}
+.underline{
+    text-decoration: underline;
 }
 .moveright{
-    margin-left: 45px;
+    margin-left: 40px;
 }
 .gst-color{
+    padding: 2px;
     color: white;
+    border-radius: 6px;
     background-color:rgba(1, 17, 53, 1);
 }
 .productphoto-flex{
     display: flex;
     gap: 30px;
 }
+.productphoto-in{
+    padding: 9px;
+}
+.productphoto-in p{
+    color: rgba(137, 137, 137, 1);
+    margin: 0px 0px 5px 10px;
+}
+.productphoto-in input{
+    width: 144%;
+}
+.plus-symbol{
+    position: absolute;
+    color: white;
+    background-color: rgba(1, 17, 53, 1);
+    text-align: center;
+    border-radius: 13px;
+    padding: 0px;
+    top: 11%;
+    left: 88%;
+    width: 18px;
+    height: 18px;
+}
+.camera{
+    width: 35px;
+    height: 35px;
+    margin: 30px 0px 0px 90px;
+    border: 1px solid rgba(128, 128, 128, 0.365);
+    border-radius: 5px;
+    padding: 6px;
+}
+.camera-p{
+    margin: 0px 0px 0px 90px;
+    color: rgba(137, 137, 137, 1);
+}
 .productvariety{
     display: flex;
+}
+.productvariety p{
+    color: rgba(137, 137, 137, 1);
+    margin: 10px 0px 5px 19px;
+}
+.productvariety input{
+    width: 110px;
+    margin-left: 18px;
+    text-align: center;
+    color: black;
+}
+.productvariety-select{
+    width: 106px;
+    padding: 9px;
+    border: 1px solid rgba(128, 128, 128, 0.123);
+    border-radius: 5px;
+    margin-left: 12px;
+    text-align: center;
+}
+.item-code p{
+    margin: 16px 0px 6px 20px;
+    color: grey;
+}
+.item-code input{
+    margin-left: 19px;
+}
+.scan-code{
+    position: absolute;
+    right: 8%;
+    top: 38.8%;
+    width: 23px;
+    height: 23px;
+}
+.item-category p{
+    margin: 16px 0px 6px 20px;
+    color: gray;
+}
+.item-category input{
+    margin-left: 19px;
 }
 .producttaxcode{
     display: flex;
 }
+.producttaxcode p{
+    color: gray;
+    margin: 16px 0px 6px 20px;
+}
+.producttaxcode input{
+    width: 90%;
+    margin-left: 20px;
+}
+.SearchBar-icon{
+    position: absolute;
+    left: 44%;
+    top: 61.5%;
+}
+.producttaxcode select{
+    width: 160px;
+    padding: 9px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-left: 12px;
+    text-align: center;
+}
 .productgstitem-button{
     padding: 5px;
     gap: 19px;
+    margin-top: 50px;
     margin-bottom: 10px;
 }
 .productgstitem-delete{
     padding: 11px;
-    width: 156px;
+    width: 170px;
     color: grey;
     border: 2px solid grey;
     background-color:rgba(255, 255, 255, 1);
@@ -59,9 +163,51 @@
 }
 .productgstitem-save{
     padding: 11px;
-    width: 156px;
+    width: 170px;
     border-radius: 7px;
     background-color:rgba(1, 17, 53, 1);
     color: white;
     margin-left: 10px;
+}
+/* No gst area css */
+.producttaxcode-nogst p{
+    color: gray;
+    margin: 16px 0px 6px 20px;
+}
+.producttaxcode-nogst input{
+    width: 90%;
+    margin-left: 20px;
+}
+.SearchBar-icon-nogst{
+    position: absolute;
+    left: 88%;
+    top: 61.5%;
+}
+
+/* Service section css */
+.productvariety-service{
+    display: flex;
+}
+.productvariety-service p{
+    color: rgba(137, 137, 137, 1);
+    margin: 10px 0px 5px 19px;
+}
+.productvariety-service input{
+    width: 170px;
+    margin-left: 18px;
+    text-align: center;
+    color: black;
+}
+.productvariety-select-service{
+    width: 170px;
+    padding: 9px;
+    border: 1px solid rgba(128, 128, 128, 0.123);
+    border-radius: 5px;
+    margin-left: 12px;
+    text-align: center;
+}
+.SearchBar-icon-nogst-service{
+    position: absolute;
+    left: 88%;
+    top: 50%;
 }

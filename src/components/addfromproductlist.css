@@ -38,3 +38,7 @@
     border: 2px solid rgba(128, 128, 128, 0.263);
     padding: 12px;
 }
+.addfromproduct-flex span{
+    color: gray;
+    font-size: 16px;
+}

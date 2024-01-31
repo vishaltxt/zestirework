@@ -4,9 +4,9 @@ const AddFromList = ({ closeaddfromlist }) => {
 
     return (
         <>
-            <div className="main-addfromlist" onClick={closeaddfromlist}>
+            <div className="main-addfromlist" >
                 <div className='addfromlist-container'>
-                    <div>
+                    <div className='addfromlist-people' onClick={closeaddfromlist}>
                         <h5>Arjun Srivastav</h5>
                         <p>Customer</p>
                     </div>
